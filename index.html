@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <h3 class="bouncing-text"><span>BENSOUSSAN Anatole</span></h3>
+        </div>
+        <ul>
+            <li class="submenu active">
+                <a href="index.html">Présentation</a>
+                <ul>
+                    <li><a href="index_formation.html">Apprenti</a></li>
+                    <li><a href="index_entreprise.html">Entreprise</a></li>
+                </ul>
+            <li class="submenu">
+                <a href="missions.html">Epreuve: E5</a>
+                <ul>
+                    <li><a href="missions_formation.html">Formation</a></li>
+                    <li><a href="missions_entreprise.html">Entreprise</a></li>
+                </ul>
+            </li>
+            <li><a href="situations.html">Epreuve: E6</a></li>
+            <li><a href="veille.html">Veille</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <header>
+            <h1 class="bouncing-text">
+                <span>B</span><span>i</span><span>e</span><span>n</span><span>v</span><span>e</span><span>n</span><span>u</span><span>e</span>
+                <span>s</span><span>u</span><span>r</span>
+                <span>m</span><span>o</span><span>n</span>
+                <span>p</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+            </h1>
+        </header>
+        <main>
+	   <section>
+		<h2 class="bouncing-text"><span><strong>En apprendre plus sur moi</span></strong></h2>
+		<p>Pour plus d'informations veuillez consulter mon <strong>CV</strong> :</p>
+            <button onclick="window.open('CV BENSOUSSAN Anatole BTS SIO.pdf', '_blank')"><span>CV</span></button>
+	   </section>
+	   <section class="bouncing-text">
+		<h2><span><strong>Retrouvez-moi sur LinkedIn</span></strong></h2>
+                <p>Pour me contacter, rendez-vous sur mon profil LinkedIn :</p>
+                <a href="https://fr.linkedin.com/in/anatole-bensoussan-8417a3213" target="_blank" class="linkedin-button"><strong><span>Mon LinkedIn</span></strong></a>
+   <button onclick="window.location.href='index_formation.html'"><span>Présentation Formation</span></button>
+   <button onclick="window.location.href='index_entreprise.html'"><span>Présentation Entreprise</span></button>
+            </section>
+
+
+   <button onclick="window.location.href='missions.html'"><span>Epreuve E5</span></button>
+        </main>
+    </div>
+</span><script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const sidebar = document.querySelector(".sidebar");
+
+        window.addEventListener("scroll", function () {
+            let scrollTop = window.scrollY; // Récupère la position du scroll
+            sidebar.style.top = scrollTop + "px"; // Applique la nouvelle position
+        });
+    });
+</script></body>
+</html>

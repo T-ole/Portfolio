@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO - Missions Formation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bouncing-text">
+    <div class="sidebar">
+        <div class="profile">
+            <h3><span>BENSOUSSAN Anatole</span></h3>
+        </div>
+        <ul>
+            <li class="submenu">
+                <a href="index.html">Présentation</a>
+                <ul>
+                    <li><a href="index_formation.html">Apprenti</a></li>
+                    <li><a href="index_entreprise.html">Entreprise</a></li>
+                </ul>
+            <li class="submenu">
+                <a href="missions.html">Epreuve: E5</a>
+                <ul>
+                    <li class="active"><a href="missions_formation.html">Formation</a></li>
+                    <li><a href="missions_entreprise.html">Entreprise</a></li>
+                </ul>
+            </li>
+            <li><a href="situations.html">Epreuve: E6</a></li>
+            <li><a href="veille.html">Veille</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <header class="bouncing-text">
+            <h1><strong><span>E5: </span></strong> <span>Missions en Formation</span></h1>
+        </header>
+        <main class="bouncing-text">
+            <section>
+                <h2><strong><span>Missions réalisées en formation</span></strong></h2>
+                <ul>
+                    <li>Fiche mission - Atelier ACL</li>
+		    <button onclick="window.open('Fiche mission - Atelier ACL.pdf', '_blank')"><span>Atelier ACL</span></button>
+                    <li>Fiche mission - Installation et configuration du service DHCP sur Windows Server 2022</li>
+		    <button onclick="window.open('Fiche mission - Installation et configuration du service DHCP sur Windows Server 2022.pdf', '_blank')"><span>Atelier DHCP</span></button>
+                    <li>Fiche mission - Installation et configuration de hMailServer sur Windows Server 2022</li>
+		    <button onclick="window.open('Fiche mission - Installation et configuration de hMailServer sur Windows Server 2022.pdf', '_blank')"><span>hMailServer</span></button>
+                    <li>Fiche mission - Installation de Cockpit sur Debian 12.8</li>
+                </ul>
+		    <button onclick="window.open('Fiche mission - Installation de Cockpit sur Debian 12.8.pdf', '_blank')"><span>Installation de Cockpit</span></button>
+            </section>
+	    <button onclick="window.location.href='missions_entreprise.html'"><span>E5: Entreprise</span></button>
+<button onclick="window.location.href='situations.html'"><span>E6</span></button>
+        </main>
+    </div>
+</span><script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const sidebar = document.querySelector(".sidebar");
+
+        window.addEventListener("scroll", function () {
+            let scrollTop = window.scrollY; // Récupère la position du scroll
+            sidebar.style.top = scrollTop + "px"; // Applique la nouvelle position
+        });
+    });
+</script></body>
+</html>
