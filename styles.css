@@ -194,5 +194,5 @@ button:hover, .linkedin-button:hover {
     max-width: 200px; /* Limite la taille de l'image pour qu'elle s'intègre bien */
     height: auto;
     display: block;
-    margin: 0.5 auto 0rem; /* Centre l'image et ajoute un espace sous elle */
+    margin: 0.5rem auto 0; /* Centre l'image et ajoute un espace au-dessus */
 }
