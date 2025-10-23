@@ -192,7 +192,7 @@ button:hover, .linkedin-button:hover {
 
 /* Style pour l'image LinkedIn (évite images trop grandes dans le bouton/ lien) */
 .linkedin-button img {
-    width: 48px;
+    width: 100px;
     height: auto;
     display: block;
     margin: 0 auto;
