@@ -127,6 +127,25 @@ button:hover, .linkedin-button:hover {
     transform: scale(1.05);
 }
 
+/* LinkedIn : taille au contenu et centrage */
+section#Contact { 
+    text-align: center; /* centre les inline-blocks à l'intérieur */
+}
+.linkedin-button {
+    display: inline-block;    /* ne prend plus toute la largeur */
+    margin: 2rem 0;           /* espace vertical, centré par text-align */
+    padding: 0.5rem 1rem;     
+    background-color: #5a6d8a; /* conserve le style bouton */
+    border-radius: 5px;
+    text-decoration: none;
+}
+.linkedin-button img {
+    width: 48px; /* réduit l'image pour un meilleur rendu */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Animation de texte qui tombe, rebondit et se stabilise */
 @keyframes dropBounce {
     0% {
@@ -189,12 +208,3 @@ button:hover, .linkedin-button:hover {
     display: block;
     margin: 0.5rem auto 0; /* Centre l'image et ajoute un espace au-dessus */
 }
-
-/* Style pour l'image LinkedIn (évite images trop grandes dans le bouton/ lien) */
-.linkedin-button img {
-    width: 100px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-.l {} 
