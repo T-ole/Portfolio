@@ -44,7 +44,7 @@
       </section>
       <section id="Pour en savoir plus sur mon parcours :">  
         <h2><strong><span>Pour en savoir plus sur mon parcours :</span></strong></h2>
-        <button onclick="window.open('CV BENSOUSSAN Anatole BTS SIO.pdf', '_blank')"><span>CV</span></button>
+        <a href="CV%20BENSOUSSAN%20Anatole%20BTS%20SIO.pdf" target="_blank" rel="noopener noreferrer"><button><span>CV</span></button></a>
       </section>
       <section id="Contact">
         <h3><strong><span>Pour me contacter, rendez-vous sur mon profil LinkedIn :</span></strong></h3>
@@ -57,14 +57,14 @@
         <button onclick="window.location.href='missions.html'"><span>Epreuve E5</span></button>
     </main>
   </div>
-</span><script>
-    document.addEventListener("DOMContentLoaded", function () {
+<script>
+     document.addEventListener("DOMContentLoaded", function () {
         const sidebar = document.querySelector(".sidebar");
-
+        if (!sidebar) return;
         window.addEventListener("scroll", function () {
-            let scrollTop = window.scrollY; // Récupère la position du scroll
-            sidebar.style.top = scrollTop + "px"; // Applique la nouvelle position
+            let scrollTop = window.scrollY;
+            sidebar.style.top = scrollTop + "px";
         });
-    });
-</script></body>
+     });
+ </script></body>
 </html>

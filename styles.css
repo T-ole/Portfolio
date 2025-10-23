@@ -12,13 +12,15 @@ body {
     background-color: #3a4a5e;
     color: #f7f9fc;
     height: auto;
-    position: absolute;
+    position: fixed; /* fixe la sidebar dans la fenêtre */
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
     border-right: 5px solid #3a4a5e;
+    max-height: 100vh; /* évite débordement hors écran */
+    overflow: auto;   /* permet de scroller la sidebar si nécessaire */
 }
 
 .profile {
@@ -124,16 +126,8 @@ button:hover, .linkedin-button:hover {
     background-color: #3a4a5e;
     transform: scale(1.05);
 }
+
 /* Animation de texte qui tombe, rebondit et se stabilise */
-@keyframes dropBounce {
-
-}
-
-/* Ajoute un délai pour chaque lettre pour qu'elles tombent une par une */
-.bouncing-text span {
-    display: inline-block;
-    animation: dropBounce 1.2s ease-out forwards;
-}
 @keyframes dropBounce {
     0% {
         transform: translateY(-300px);
@@ -151,17 +145,16 @@ button:hover, .linkedin-button:hover {
     }
     100% {
         transform: translateY(0);
-        opacity: 1; /* Assure que l'opacité est à 1 à la fin de l'animation */
+        opacity: 1;
     }
 }
 
+/* Ajoute un délai pour chaque lettre pour qu'elles tombent une par une */
 .bouncing-text span {
     display: inline-block;
     animation: dropBounce 1.2s ease-out forwards;
     opacity: 0; /* Départ invisible */
 }
-
-
 
 .bouncing-text span:nth-child(1)  { animation-delay: 0.1s; }
 .bouncing-text span:nth-child(2)  { animation-delay: 0.2s; }
@@ -195,4 +188,13 @@ button:hover, .linkedin-button:hover {
     height: auto;
     display: block;
     margin: 0.5rem auto 0; /* Centre l'image et ajoute un espace au-dessus */
+}
+
+/* Style pour l'image LinkedIn (évite images trop grandes dans le bouton/ lien) */
+.linkedin-button img {
+    width: 48px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
 }
