@@ -191,7 +191,7 @@ button:hover, .linkedin-button:hover {
 
 /* Continue pour chaque lettre (ou ajoute plus de nth-child si nécessaire) */
 .presentation-image {
-    max-width: 200px; /* Limite la taille de l'image pour qu'elle s'intègre bien */
+    max-width: auto; /* Limite la taille de l'image pour qu'elle s'intègre bien */
     height: auto;
     display: block;
     margin: 0.5rem auto 0; /* Centre l'image et ajoute un espace au-dessus */
