@@ -18,39 +18,38 @@
                     <li><a href="index_formation.html">Apprenti</a></li>
                     <li><a href="index_entreprise.html">Entreprise</a></li>
                 </ul>
+            </li>
             <li class="submenu active">
                 <a href="missions.html">Epreuve: E5</a>
                 <ul>
-                    <li><a href="#" onclick="window.open(encodeURI('6- Annexe 6-1 - Tableau de synthèse - Epreuve E4 - BTS SIO 2023.pdf'), '_blank', 'noopener'); return false;">Annexe 6-1 — Tableau de synthèse (E5)</a></li>
+                    <li><a href="6- Annexe 6-1 - Tableau de synthèse - Epreuve E4 - BTS SIO 2023.pdf" target="_blank" rel="noopener">Annexe 6-1 — Tableau de synthèse (E5)</a></li>
                     <li><a href="missions_formation.html">Formation</a></li>
                     <li><a href="missions_entreprise.html">Entreprise</a></li>
                 </ul>
             </li>
             <li><a href="situations.html">Epreuve: E6</a></li>
             <li><a href="veille.html">Veille</a></li>
-            
         </ul>
     </div>
     <div class="content">
         <header class="bouncing-text">
             <h1><strong><span>Epreuve E5: </span></strong> <span>Mes missions</span></h1>
         </header>
-		<section>
         <main class="bouncing-text">
-            <p>Choisissez une catégorie dans le menu pour voir les missions.</p>
-	    <button onclick="window.open('6- Annexe 6-1 - Tableau de synthèse - Epreuve E4 - BTS SIO 2023.pdf', '_blank')"><span>Tableau de Synthèse</span></button>
-            <button onclick="window.location.href='missions_formation.html'"><span>Formation</span></button>
-	    <button onclick="window.location.href='missions_entreprise.html'"><span>Entreprise</span></button>
-		</section>
+            <section>
+                <p>Choisissez une catégorie dans le menu pour voir les missions.</p>
+                <button onclick="window.open('6-Annexe-6-1-Tableau-de-synthese.pdf', '_blank')"><span>Tableau de Synthèse</span></button>
+                <button onclick="window.location.href='missions_formation.html'"><span>Formation</span></button>
+                <button onclick="window.location.href='missions_entreprise.html'"><span>Entreprise</span></button>
+            </section>
         </main>
     </div>
 </span><script>
     document.addEventListener("DOMContentLoaded", function () {
         const sidebar = document.querySelector(".sidebar");
-
         window.addEventListener("scroll", function () {
-            let scrollTop = window.scrollY; // Récupère la position du scroll
-            sidebar.style.top = scrollTop; // Applique la nouvelle position
+            let scrollTop = window.scrollY; // position du scroll
+            sidebar.style.top = scrollTop + 'px'; // ajoute 'px'
         });
     });
 </script></body>
